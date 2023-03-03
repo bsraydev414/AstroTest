@@ -9,6 +9,10 @@ image:
 tags: ["astro", "blogging", "learning in public"]
 ---
 
+<script>
+import '../styles/global.css';
+</script>
+
 # My First Blog Post
 
 Published on: 2022-07-01

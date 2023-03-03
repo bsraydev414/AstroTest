@@ -1,6 +1,12 @@
 ---
 import '../styles/global.css';
-const pageTitle = "Home Page";
+import Navigation from '../components/Navigation.astro';
+
+const pageTitle = "My Home Page ";
+const myname = "Brian Ray";
+const yearsOfExperience = 20;
+const expertise = "Software Development";
+
 ---
 
 <html lang="en">
@@ -11,10 +17,11 @@ const pageTitle = "Home Page";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>
-	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+	<body class="container">
+		<Navigation />
 		<h1>{pageTitle}</h1>
+		<p>I'm {myname}, a {yearsOfExperience}-year veteran of the {expertise} industry.</p>
+		<p>Throughout my career, I've worked on a variety of projects,</p>
+		<p> including leading teams that created innovative software.</p>
 	</body>
 </html>
